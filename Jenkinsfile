@@ -2,8 +2,6 @@ pipeline {
     agent {
        node { label 'MyAgent' }
     }
-    environment { 
-        version =  '17.2'
     }
     options {
         timestamps()
