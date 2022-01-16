@@ -14,7 +14,7 @@ pipeline {
         stage ('Build and test'){
             steps {
 		sh 'ls -la'
-		sh 'chmod +x ./scripts/testhost-start.sh
+		sh 'chmod +x ./scripts/testhost-start.sh'
 		sh 'docker compose up -d'
 		sh 'sleep 5s'
 		sh 'docker compose down'
