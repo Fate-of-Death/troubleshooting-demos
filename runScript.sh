@@ -1,5 +1,5 @@
 #!/bin/bash
-BuildVersion="5.2"
+BuildVersion="17.2"
 K=`uname -sr`
 echo "Environment is: $K"
 
