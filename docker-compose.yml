@@ -3,7 +3,7 @@ services:
  jenkins-conAgent:
    container_name: JenConAgent-scenario2
    hostname: testhost-local
-   image: debian:stretch-sli
+   image: debian:stretch-slim
    volumes:
      - "$PWD/scripts:/root"
    networks:
