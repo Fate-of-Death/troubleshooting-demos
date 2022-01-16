@@ -3,13 +3,13 @@ services:
  jenkins-conAgent:
    container_name: JenConAgent-scenario2
    hostname: testhost-local
-   image: debian:stretch-slim
+   image: debian:stretch-sli
    volumes:
      - "$PWD/scripts:/root"
    networks:
      - jenkins-scenario2
    ports:
       - "224:22"
-   entrypoint: "./root/testhost-star.sh"
+   entrypoint: "./root/testhost-start.sh"
 networks:
   jenkins-scenario2:
