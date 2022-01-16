@@ -15,6 +15,8 @@ pipeline {
             steps {
 		sh 'ls -la'
 		sh 'docker compose up -d'
+		sh 'sleep 5s'
+		sh 'docker compose down'
             }
         }
     }
