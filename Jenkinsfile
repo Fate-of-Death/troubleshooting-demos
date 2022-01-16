@@ -14,7 +14,7 @@ pipeline {
         stage ('Build and test'){
             steps {
 		sh 'ls -la'
-		sh 'docker-compose up -d'
+		sh 'docker compose up -d'
             }
         }
     }
