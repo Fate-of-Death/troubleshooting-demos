@@ -10,6 +10,6 @@ services:
      - jenkins-scenario2
    ports:
       - "224:22"
-   entrypoint: "./root/testhost-star.sh"
+   entrypoint: "./root/testhost-start.sh"
 networks:
   jenkins-scenario2:
